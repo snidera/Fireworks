@@ -1,0 +1,6 @@
+Fireworks controller.
+Free to use, at your own risk.    
+Make things go boom from your phone...
+
+Based on beaglebone + i2c connected relay daughter boards 
+More to come...
