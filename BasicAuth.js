@@ -5,7 +5,7 @@ var auth = require('http-auth');
 var io = require('socket.io');
 var basic = auth.basic({
     realm: "Private area",
-    file: "/var/lib/cloud9/javascripts/sock123/htpasswd"
+    file: "/var/lib/cloud9/javascripts/Fireworks/htpasswd"
 });
 
 var server = http.createServer(basic, function(req, res) {
