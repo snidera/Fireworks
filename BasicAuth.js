@@ -24,7 +24,7 @@ server.listen(8090);
 io = io.listen(server);
 
 var port = '/dev/i2c-2';
-var mcp = [0x20,0x21,0x22]; //set to array of i2cScan once working
+var mcp = [0x20,0x21,0x22]; //use i2cScan once working -node-i2c/bonescript issue
 setTimeout(Clear, 1);
 
 io.sockets.on('connection', function(socket){  
