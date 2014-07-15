@@ -1,0 +1,94 @@
+<html>
+<head>
+    <script src = "/socket.io/socket.io.js" > </script>
+    <script type=text/javascript src="http://code.jquery.com/jquery-1.7.1./
+    min.js"></script>
+
+<script>
+        var socket = io.connect();
+    
+        function ledOn(x){
+        socket.emit('FIRE', x);
+        }
+        function STOP(){
+            socket.emit('STOP')
+        }
+</script>
+	
+</head>
+ 
+<body>
+
+<div id="container" style="width:275px">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;text-align:center;">FIREWORKS</h1></div>
+<input type="button" name="STOP" id="STOP" value="STOP" onClick="STOP()";>
+
+<div id="content" style="background-color:#EEEEEE;height:185px;width:275px;float:left;">
+<h3 style="margin-bottom:0;text-align:center;">0x20</h3>
+    <input type="button" name="Output1" id="Output1" value="Output1" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x80});">
+    <input type="button" name="Output2" id="Output2" value="Output2" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x40});">
+    <input type="button" name="Output3" id="Output3" value="Output3" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x20});">
+    <input type="button" name="Output4" id="Output4" value="Output4" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x10});"><br>
+    <input type="button" name="Output5" id="Output5" value="Output5" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x08});">
+    <input type="button" name="Output6" id="Output6" value="Output6" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x04});">
+    <input type="button" name="Output7" id="Output7" value="Output7" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x02});">
+    <input type="button" name="Output8" id="Output8" value="Output8" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x12,VALUE:0x01});"><br>
+    <input type="button" name="Output9" id="Output9" value="Output9" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x80});">
+    <input type="button" name="Output10" id="Output10" value="Output10" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x40});">
+    <input type="button" name="Output11" id="Output11" value="Output11" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x20});">
+    <input type="button" name="Output12" id="Output12" value="Output12" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x10});"><br>
+    <input type="button" name="Output13" id="Output13" value="Output13" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x08});">
+    <input type="button" name="Output14" id="Output14" value="Output14" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x04});">
+    <input type="button" name="Output15" id="Output15" value="Output15" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x02});">
+    <input type="button" name="Output16" id="Output16" value="Output16" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x20,BANK:0x13,VALUE:0x01});">
+    </div>
+    
+<div id="content" style="background-color:#EEEEEE;height:185px;width:275px;float:left;">
+<h3 style="margin-bottom:0;text-align:center;">0x21</h3>
+    <input type="button" name="Output1" id="Output1" value="Output1" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x80});">
+    <input type="button" name="Output2" id="Output2" value="Output2" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x40});">
+    <input type="button" name="Output3" id="Output3" value="Output3" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x21});">
+    <input type="button" name="Output4" id="Output4" value="Output4" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x10});"><br>
+    <input type="button" name="Output5" id="Output5" value="Output5" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x08});">
+    <input type="button" name="Output6" id="Output6" value="Output6" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x04});">
+    <input type="button" name="Output7" id="Output7" value="Output7" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x02});">
+    <input type="button" name="Output8" id="Output8" value="Output8" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x12,VALUE:0x01});"><br>
+    <input type="button" name="Output9" id="Output9" value="Output9" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x80});">
+    <input type="button" name="Output10" id="Output10" value="Output10" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x40});">
+    <input type="button" name="Output11" id="Output11" value="Output11" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x21});">
+    <input type="button" name="Output12" id="Output12" value="Output12" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x10});"><br>     
+    <input type="button" name="Output13" id="Output13" value="Output13" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x08});">
+    <input type="button" name="Output14" id="Output14" value="Output14" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x04});">
+    <input type="button" name="Output15" id="Output15" value="Output15" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x02});">
+    <input type="button" name="Output16" id="Output16" value="Output16" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x21,BANK:0x13,VALUE:0x01});">
+</div>
+
+<div id="content" style="background-color:#EEEEEE;height:185px;width:275px;float:left;">
+<h3 style="margin-bottom:0;text-align:center;">0x22</h3>
+    <input type="button" name="Output1" id="Output1" value="Output1" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x80});">
+    <input type="button" name="Output2" id="Output2" value="Output2" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x40});">
+    <input type="button" name="Output3" id="Output3" value="Output3" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x22});">
+    <input type="button" name="Output4" id="Output4" value="Output4" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x10});"><br>
+    <input type="button" name="Output5" id="Output5" value="Output5" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x08});">
+    <input type="button" name="Output6" id="Output6" value="Output6" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x04});">
+    <input type="button" name="Output7" id="Output7" value="Output7" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x02});">
+    <input type="button" name="Output8" id="Output8" value="Output8" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x12,VALUE:0x01});"><br>
+    <input type="button" name="Output9" id="Output9" value="Output9" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x80});">
+    <input type="button" name="Output10" id="Output10" value="Output10" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x40});">
+    <input type="button" name="Output11" id="Output11" value="Output11" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x22});">
+    <input type="button" name="Output12" id="Output12" value="Output12" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x10});"><br>
+    <input type="button" name="Output13" id="Output13" value="Output13" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x08});">
+    <input type="button" name="Output14" id="Output14" value="Output14" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x04});">
+    <input type="button" name="Output15" id="Output15" value="Output15" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x02});">
+    <input type="button" name="Output16" id="Output16" value="Output16" style="width: 65px; height: 35px" onClick="ledOn({ADDRESS:0x22,BANK:0x13,VALUE:0x01});">
+</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Andy Snider</div>
+
+</div>
+      
+</body>
+</html>
