@@ -1,6 +1,8 @@
 Fireworks controller.
-Free to use, at your own risk.    
 Make things go boom from your phone...
 
-Based on beaglebone + i2c connected relay daughter boards 
-More to come...I'm learning how to us git...
+Free to copy, use at your own risk.  This is somewhat hacked-together as I'm not a professional.    
+
+BeagleboneBlack + i2c connected relay daughter boards 
+
+Uses socket.io bonescript http-auth htpasswd
