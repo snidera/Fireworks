@@ -29,7 +29,7 @@ setTimeout(Clear, 1);
 
 io.sockets.on('connection', function(socket){  
   socket.on('FIRE', function (data) {
-    var delay = 500;
+    var delay = 750;
     b.i2cOpen(port, data.ADDRESS, {});
     b.i2cWriteBytes(port, data.BANK, [data.VALUE]);
     console.log(JSON.stringify(data));    
